@@ -1,0 +1,361 @@
+// header menu
+.oMHeader{
+  height:2.1rem;
+  .oMHeaderUp{
+    height:1.1rem;
+    width:7.5rem;
+    background:#000;
+    display:flex;
+    display:-webkit-flex;
+    justify-content: space-between;
+    .oMHeaderOne{
+      line-height: 1.1rem; 
+      padding-left:0.4rem;   
+      i{
+        color:#fff;
+        font-size: 0.44rem;
+        display: block;
+      }
+    }
+    .oMHeaderTwo{
+      overflow: hidden;
+      margin-top:0.23rem;
+      border:3px solid #fff;
+      border-radius: 0.1rem;
+      height:0.66rem;
+      a{
+        height:0.66rem;
+        width:1.55rem;
+        display: block;
+        color:#fff;
+        font-size: 0.28rem;
+        float: left;
+        line-height: 0.66rem;
+        text-align:center;
+      }
+      .oMHeaderTwoAct{
+        background: #fff;
+        color:#000;
+      }
+    }
+    .oMHeaderThree{
+      padding-right:0.3rem;
+      a{
+        display: block;
+        line-height:1.1rem;
+        i{
+          color:#fff;
+          font-size: 0.4rem;
+          display: block;
+        }
+      }
+    }
+  } 
+  .oMHeaderDown{
+      height:0.94rem;
+      width:100%;
+      display: flex;
+      display: -webkit-flex;
+      -webkit-justify-content: space-around;
+      justify-content: space-around;
+      border-bottom:4px solid #ddd;
+      a{
+        background: #fff;
+        display: block;
+        flex:1;
+        text-align: center;
+        -webkit-flex:1;
+        color:#000;
+        line-height: 0.94rem;
+        font-size: 0.24rem;
+      }
+      .active{
+        background: #ddd;
+      }
+  }
+}
+
+// content
+.oMsection{
+  flex:1;
+  overflow: hidden;
+  width:7.5rem;
+  position: relative;
+  .oMsectionMove{
+    height:100%;
+    display: flex;
+    display: -webkit-flex;
+    width:22.5rem;
+    position: absolute;
+    .oMSecOneList{
+      height:100%;
+      flex:1;
+      overflow-y: auto;
+      li{
+        height:1.36rem;
+        border-bottom:1px solid #ddd;
+        overflow: hidden;
+        .oMSecOneListLeft{
+          width:6.45rem;
+          float:left;
+          padding-left:0.22rem;
+          .oMSecOneListLeftUp{
+            line-height: 0.8rem;
+            font-size: 0.24rem;
+            font-weight: 600;
+            overflow: hidden;
+            span{
+              float:right;
+              color:#8b7c5a;
+              font-weight: 100;
+            }
+          }
+          .oMSecOneListLeftDown{
+            line-height: 0.36rem;
+            font-size: 0.2rem;
+            color:#666;
+            b{
+              font-style: normal;
+              background: #92d285;
+              color:#fff;
+              float:left;
+              padding:0 0.2rem;
+              border-radius: 0.2rem;
+              margin-right:0.2rem;
+            }
+            span{
+              float:right;
+            }
+          }
+        }
+        .oMSecOneListRight{
+          float:left;
+          line-height: 1.36rem;
+          color:#666;
+          margin-left:0.27rem;
+          i{
+            font-size: 0.40rem;
+            display: block;
+          }
+        }
+      }
+    }
+    .oMSecTwoList{
+      height:100%;
+      flex:1;
+      overflow-y:auto;
+      li{
+        height:1.36rem;
+        border-bottom:1px solid #ddd;
+        overflow: hidden;
+        .oMSecOneListLeft{
+          width:6.45rem;
+          float:left;
+          padding-left:0.22rem;
+          .oMSecOneListLeftUp{
+            line-height: 0.8rem;
+            font-size: 0.24rem;
+            font-weight: 600;
+            overflow: hidden;
+            span{
+              float:right;
+              color:#8b7c5a;
+              font-weight: 100;
+            }
+          }
+          .oMSecOneListLeftDown{
+            line-height: 0.36rem;
+            font-size: 0.2rem;
+            color:#666;
+            b{
+              font-style: normal;
+              background: #92d285;
+              color:#fff;
+              float:left;
+              padding:0 0.2rem;
+              border-radius: 0.2rem;
+              margin-right:0.2rem;
+            }
+            span{
+              float:right;
+            }
+          }
+        }
+        .oMSecOneListRight{
+          float:left;
+          line-height: 1.36rem;
+          color:#666;
+          margin-left:0.27rem;
+          i{
+            font-size: 0.40rem;
+            display: block;
+          }
+        }
+      }
+    }
+    .oMSecThreeList{
+      overflow-y:auto;      
+      height:100%;
+      flex:1;
+      li{
+        height:1.36rem;
+        border-bottom:1px solid #ddd;
+        overflow: hidden;
+        .oMSecOneListLeft{
+          width:6.45rem;
+          float:left;
+          padding-left:0.22rem;
+          .oMSecOneListLeftUp{
+            line-height: 0.8rem;
+            font-size: 0.24rem;
+            font-weight: 600;
+            overflow: hidden;
+            span{
+              float:right;
+              color:#8b7c5a;
+              font-weight: 100;
+            }
+          }
+          .oMSecOneListLeftDown{
+            line-height: 0.36rem;
+            font-size: 0.2rem;
+            color:#666;
+            b{
+              font-style: normal;
+              background: #92d285;
+              color:#fff;
+              float:left;
+              padding:0 0.2rem;
+              border-radius: 0.2rem;
+              margin-right:0.2rem;
+            }
+            span{
+              float:right;
+            }
+          }
+        }
+        .oMSecOneListRight{
+          float:left;
+          line-height: 1.36rem;
+          color:#666;
+          margin-left:0.27rem;
+          i{
+            font-size: 0.40rem;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+// oMInOrder
+
+.oMInOrder{
+  flex:1;
+  -webkit-flex:1;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  left:0;
+  top:0;
+}
+    
+// position
+.oMOut{
+  position: fixed;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  width:3.8rem;
+  height:2rem;
+  background: #fff;
+  border-radius:0.15rem;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  z-index: 2;
+  overflow: hidden;
+  box-shadow: 0 0 16px 8px #777;
+  display: none;
+  p{
+    line-height: 1.4rem;
+    font-size: 0.38rem;
+    text-align: center;
+    font-weight: 600;
+  }
+  a{
+    flex:1;
+    -webkit-flex:1;
+    display: block;
+    background: #000;
+    color:#fff;
+    font-size: 0.3rem;
+    line-height: 0.6rem;
+    text-align: center;
+  }
+}
+.oMfog{
+  width:100%;
+  height:100%;
+  position: fixed;
+  background: rgba(0,0,0,.4);
+  left:0;
+  top:0;
+  z-index: 1;
+  display: none;
+}
+.oMSearch{
+  height:100%;
+  width:100%;
+  background: #fff;
+  position: fixed;
+  left:7.5rem;
+  top:0;
+  z-index: 3;
+  .oMSearchTop{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    height:1.1rem;
+    background: #000;
+    align-items: center;
+    input{
+      width:5.06rem;
+      height:0.8rem;
+      border:1px solid #ccc;
+      background: #282828;
+      text-indent: 0.3rem;
+      color:#fff;
+      font-size: 0.26rem;
+    }
+    input::-webkit-input-placeholder{
+      color:#fff;
+    }
+    i{
+      color:#fff;
+      font-size: 0.50rem;
+      flex:1;
+      text-align: center;
+    }
+    p{
+      font-size: 0.28rem;
+      text-align: center;
+      line-height: 0.20rem;
+      color:#282828;
+      background: #ccc;
+      border-radius: 50%;
+      padding:0.05rem;
+      width:0.20rem;
+      font-weight: 600;
+      position: absolute;
+      left:5.9rem;
+      top:0.4rem;
+    }
+  }
+}
