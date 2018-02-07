@@ -4,8 +4,8 @@
     <div class="indexBanner">
       <img src="/static/images/logo.png" alt="小付云餐厅" class="indexLogo"/>
       <div class="businessName">光明酒店</div>
-      <a href="#" class="toLogin"><img src="/static/images/back.png" alt="小付云餐厅"/></a>
-      <a href="#" class="toSetting"><img src="/static/images/setting.png" alt="小付云餐厅"/></a>
+      <a href="#/login" class="toLogin"><img src="/static/images/back.png" alt="小付云餐厅"/></a>
+      <a href="#/setting" class="toSetting"><img src="/static/images/setting.png" alt="小付云餐厅"/></a>
     </div>
     <!------------------中间功能选择区------------------>
     <ul class="indexSelectList">
@@ -85,15 +85,40 @@
 </template>
 
 <script type="text/ecmascript-6">
+  import $ from 'jquery';
 	export default {
     mounted:function(){
-      /*--------------点击联系我们弹出选择联系方式列表-------------*/
-
+    //点击联系我们弹出选择联系方式列表
+      $('.contact').click(function(){
+        //显示遮盖层
+        $('.contactCover').css({'z-index':'1'}).stop().animate({'opacity':'0.4'});
+        $('.contactCoverCon').slideDown();
+      });
+    //点击取消，隐藏联系方式列表
+      $('.cancel').click(function(){
+        //隐藏遮盖层
+        $('.contactCover').stop().animate({'opacity':'0'},function(){
+          $('.contactCover').css({'z-index':'-1'})
+        });
+        $('.contactCoverCon').slideUp();
+      });
+    //点击遮盖层区域隐藏联系方式列表
+      $('.contactCover').click(function(){
+        //隐藏遮盖层
+        $('.contactCover').stop().animate({'opacity':'0'},function(){
+          $('.contactCover').css({'z-index':'-1'})
+        });
+        $('.contactCoverCon').slideUp();
+      });
     }
   }
 </script>
 
 <style scoped>
+  .indexPage{
+    height:13rem;
+    position:relative;
+  }
   /*----------------------顶部banner部分---------------------*/
   .indexBanner{
     width:100%;
@@ -164,7 +189,7 @@
     width:100%;
     display: flex;
     display: -webkit-flex;
-    position:fixed;
+    position:absolute;
     bottom:0.3rem;
     left:0;
   }
@@ -190,6 +215,7 @@
     background-size:0.44rem 0.35rem;
   }
   /*---------------联系我们选择联系方式----------------*/
+  /*上层半透明遮盖层*/
   .contactCover{
     position:fixed;
     top:0;
@@ -197,7 +223,9 @@
     width:100vw;
     height:100vh;
     background: #000;
-    opacity: 0.4;
+    opacity: 0;
+    z-index: -1;
+    /*display: none;*/
   }
   .contactCoverCon{
     width:100%;
@@ -206,6 +234,7 @@
     left:0;
     z-index: 1;
     background:#fff;
+    display: none;
   }
   .contactWay{
     padding:0.7rem 0;
