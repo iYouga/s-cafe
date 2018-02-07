@@ -1,0 +1,69 @@
+.oFHeader {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  height: 1.1rem;
+  background: #000;
+  align-items: center; }
+  .oFHeader a {
+    display: block;
+    color: #fff; }
+    .oFHeader a i {
+      display: block;
+      color: #fff;
+      font-size: 0.5rem; }
+  .oFHeader a:nth-child(1) {
+    padding-left: 0.25rem; }
+  .oFHeader a:nth-child(2) {
+    font-size: 0.32rem; }
+  .oFHeader a:nth-child(3) {
+    padding-right: 0.25rem; }
+
+.oFSection {
+  flex: 1;
+  -webkit-flex: 1;
+  overflow: auto; }
+  .oFSection .oFSectionMenu {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-around;
+    -webkit-justify-content: space-around; }
+    .oFSection .oFSectionMenu a {
+      display: block;
+      flex: 1;
+      -webkit-flex: 1;
+      color: #bbb;
+      background: #eee;
+      font-size: 0.26rem;
+      text-align: center;
+      line-height: 0.94rem; }
+    .oFSection .oFSectionMenu .oFActive {
+      background: #ddd;
+      color: #000; }
+  .oFSection .oFSectionTables {
+    overflow: hidden; }
+    .oFSection .oFSectionTables li {
+      float: left;
+      position: relative;
+      width: 2.49rem;
+      margin-top: 0.5rem; }
+      .oFSection .oFSectionTables li img {
+        margin: 0 auto; }
+      .oFSection .oFSectionTables li p {
+        font-size: 0.3rem;
+        color: #fff;
+        position: absolute;
+        left: 0.67rem;
+        top: 0.55rem;
+        width: 1.14rem;
+        height: 0.5rem;
+        border-radius: 0.15rem;
+        line-height: 0.5rem;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.4); }
+      .oFSection .oFSectionTables li h3 {
+        line-height: 0.6rem;
+        font-size: 0.28rem;
+        font-weight: normal;
+        text-align: center;
+        color: #777; }

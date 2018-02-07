@@ -1,0 +1,19 @@
+.cSDSection {
+  flex: 1;
+  overflow-y: auto;
+  background: #f5f4f9; }
+  .cSDSection .cSDSectionOne {
+    margin: 0.2rem 0.3rem 0 0.3rem;
+    background: #f5f4f9; }
+    .cSDSection .cSDSectionOne .cSDSectionOneTitle {
+      overflow: hidden;
+      margin-top: 0.2rem;
+      background: #fff; }
+      .cSDSection .cSDSectionOne .cSDSectionOneTitle span {
+        float: left;
+        font-size: 0.24rem;
+        color: #666;
+        line-height: 0.84rem;
+        margin-left: 0.3rem; }
+      .cSDSection .cSDSectionOne .cSDSectionOneTitle span:last-child {
+        margin-left: 0.6rem; }
