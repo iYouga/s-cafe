@@ -11,6 +11,16 @@ import WorkerManagePage from '../pages/WorkerManagePage'
 import PaywayManagePage from '../pages/PaywayManagePage'
 import PrinterManagePage from '../pages/PrinterManagePage'
 import UserInfosPage from '../pages/UserInfosPage'
+import orderManagement from '../pages/orderManagement'
+import orderFoods from '../pages/orderFoods'
+import noTableOrder from '../pages/noTableOrder'
+import addMeal from '../pages/addMeal'
+import changeShifts from '../pages/changeShifts'
+import changeShiftsDetails from '../pages/changeShiftsDetails'
+import changeShiftsAllRecordsDetails from '../pages/changeShiftsAllRecordsDetails'
+import dayStatistics from '../pages/dayStatistics'
+import orderDetails from '../pages/orderDetails'
+import finishOrderDetails from '../pages/finishOrderDetails'
 
 Vue.use(Router)
 
@@ -26,6 +36,16 @@ export default new Router({
     {path: '/worker',name: 'Worker',component: WorkerManagePage},
     {path: '/payway',name: 'Payway',component: PaywayManagePage},
     {path: '/printer',name: 'Printer',component: PrinterManagePage},
-    {path: '/userInfos',name: 'UserInfos',component: UserInfosPage}
+    {path: '/userInfos',name: 'UserInfos',component: UserInfosPage},
+    {path: '/orderManagement',name: 'orderManagement',component: orderManagement},
+    {path: '/orderFoods',name: 'orderFoods',component: orderFoods},
+    {path: '/noTableOrder',name: 'noTableOrder',component: noTableOrder},
+    {path: '/addMeal',name: 'addMeal',component: addMeal},
+    {path: '/changeShifts',name: 'changeShifts',component: changeShifts},
+    {path: '/changeShiftsDetails',name: 'changeShiftsDetails',component: changeShiftsDetails},
+    {path: '/dayStatistics',name: 'dayStatistics',component: dayStatistics},
+    {path: '/orderDetails',name: 'orderDetails',component: orderDetails},
+    {path: '/finishOrderDetails',name: 'finishOrderDetails',component: finishOrderDetails},
+    {path: '/changeShiftsAllRecordsDetails',name: 'changeShiftsAllRecordsDetails',component: changeShiftsAllRecordsDetails}
   ]
 })

@@ -50,7 +50,9 @@
 
 <style scoped>
   .loginPage{
-    height:13rem;
+    /*height:13rem;*/
+    overflow-y: auto;
+    padding-bottom:0.6rem;
   }
   /*------------------------header------------------------*/
   .header{
