@@ -10,6 +10,7 @@ import changeShiftsDetails from '../pages/changeShiftsDetails'
 import changeShiftsAllRecordsDetails from '../pages/changeShiftsAllRecordsDetails'
 import dayStatistics from '../pages/dayStatistics'
 import orderDetails from '../pages/orderDetails'
+import finishOrderDetails from '../pages/finishOrderDetails'
 
 
 Vue.use(Router)
@@ -25,6 +26,7 @@ export default new Router({
     {path: '/changeShiftsDetails',name: 'changeShiftsDetails',component: changeShiftsDetails},
     {path: '/dayStatistics',name: 'dayStatistics',component: dayStatistics},
     {path: '/orderDetails',name: 'orderDetails',component: orderDetails},
+    {path: '/finishOrderDetails',name: 'finishOrderDetails',component: finishOrderDetails},
     {path: '/changeShiftsAllRecordsDetails',name: 'changeShiftsAllRecordsDetails',component: changeShiftsAllRecordsDetails},
   ]
 })

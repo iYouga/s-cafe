@@ -38,7 +38,8 @@
         });
         // 跳转订单详情页
         $(".oFSectionTables li").click(function(){
-          location.href="#/orderDetails"
+          console.log(parseInt($(this).children('p').html()));
+          location.href="id="+parseInt($(this).children('p').html())+"#/finishOrderDetails/";
         })
       }
     }

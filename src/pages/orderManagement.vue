@@ -69,6 +69,15 @@
         $(".oMSearchTop p").click(function(){
           $(".oMSearchTop input").val("");
         })
+
+        // 待处理+已完成订单详情页链接点击
+        $(".oMSecOneList li").click(function(){
+          location.href="#/orderDetails"
+        });
+        $(".oMSecTwoList li").click(function(){
+          location.href="#/finishOrderDetails"
+        })
+
       }
     }
 </script>
