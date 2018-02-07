@@ -23,7 +23,7 @@
           }
       },
       mounted:function(){
-          console.log(url.id);
+          console.log(url);
           this.oDHeader.title=url.id
       },
       components:{
